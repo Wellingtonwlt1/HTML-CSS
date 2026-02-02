@@ -3,18 +3,26 @@
 body {
     height: 100vh;
     background-color: black;
-    background-image: url('imagens/wallpaper002.jpg');
-    background-position: center top;
-    background-repeat: no-repeat; /*Não repetir a imagem*/
-    background-size: cover; /*Deixar a tela inteira*/
+   
 
+    /* Shorthand - background color > imagem > position > repeat > [size] > attachment */
+
+    background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 
 main {
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border: 1px solid darkblue;
     border-radius: 15px;
 }
+
+    /*background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    background-position: center top;
+    background-repeat: no-repeat; /*Não repetir a imagem*/
+    background-size: cover; /*Deixar a tela inteira*/
+    background-attachment: fixed;/*Não Quebrar a imagem*/*/ 
