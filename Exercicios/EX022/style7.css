@@ -1,0 +1,29 @@
+@charset "UTF-8"; /* Define a codificação de caracteres para evitar erros em símbolos e acentos */
+
+#container {
+    background-image: url(imagens/target001.png); /* Define a imagem de fundo do elemento pai */
+    background-size: 100% 100%; /* Estica a imagem para cobrir toda a largura e altura do container */
+    position: relative; /* Cria um sistema de coordenadas para que elementos filhos com 'absolute' se baseiem nele */
+    height: 96vh; /* Define a altura como 96% da altura da tela (viewport height) */
+    padding: 10px; /* Espaçamento interno entre a borda e o conteúdo */
+    background-color: purple; /* Cor de fundo (visível apenas se a imagem falhar ou tiver transparência) */
+}
+
+#conteudo {
+    background-image: url(imagens/target001.png); /* Repete a imagem no elemento filho */
+    background-size: 100% 100%; /* Garante que a imagem preencha o tamanho do retângulo amarelo */
+    position: absolute; /* Permite posicionar o elemento em relação ao #container */
+    height: 200px; /* Altura fixa do elemento central */
+    width: 400px; /* Largura fixa do elemento central */
+    background-color: yellow; /* Cor de fundo amarela */
+
+    /* INÍCIO DO PROCESSO DE CENTRALIZAÇÃO */
+    left: 50%; /* Move o canto superior esquerdo do elemento para o meio da largura do pai */
+    top: 50%;  /* Move o canto superior esquerdo do elemento para o meio da altura do pai */
+
+    /* O 'translate' move o elemento de volta em 50% do seu PRÓPRIO tamanho.
+       Isso compensa o ponto de ancoragem e garante que o CENTRO do elemento
+       esteja exatamente no meio da tela.
+    */
+    transform: translate(-50%, -50%); 
+}
