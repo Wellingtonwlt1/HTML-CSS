@@ -1,101 +1,118 @@
+/* Define a codificação do arquivo como UTF-8 */
 @charset "UTF-8";
 
+/* Importa fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+/* Variáveis globais de fontes */
 :root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: "Passion One", sans-serif;
-    --fonte3: "Sriracha", cursive;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* Fonte padrão */
+    --fonte2: "Passion One", sans-serif;           /* Fonte para títulos */
+    --fonte3: "Sriracha", cursive;                 /* Fonte para textos */
 }
 
+/* Reset básico: remove margens e espaçamentos padrão */
 * {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
 
+/* Configuração geral da página */
 html, body {
-    min-height: 100vh;
-    background-color: darkgray;
-    font-family: var(--fonte1);
+    min-height: 100vh;                /* Ocupa toda a altura da tela */
+    background-color: darkgray;       /* Fundo cinza */
+    font-family: var(--fonte1);       /* Fonte padrão */
 }
 
+/* Cabeçalho */
 header {
-    background-color: black;
-    color: white;
-    text-align: center;
+    background-color: black;          /* Fundo preto */
+    color: white;                     /* Texto branco */
+    text-align: center;               /* Centraliza conteúdo */
 }
 
+/* Título principal do cabeçalho */
 header > h1 {
-    padding-top: 50px;
-    /*text-transform: uppercase;*/ 
-    font-variant: small-caps;
-    font-family: var(--fonte2);
-    font-size: 10vw;
+    padding-top: 50px;                /* Espaço superior */
+    /* text-transform: uppercase; */  /* Alternativa para deixar tudo maiúsculo */
+    font-variant: small-caps;         /* Letras em versalete */
+    font-family: var(--fonte2);       /* Fonte Passion One */
+    font-size: 10vw;                  /* Tamanho responsivo */
 }
 
+/* Parágrafo do cabeçalho */
 header > p {
-    padding-bottom: 50px;
+    padding-bottom: 50px;             /* Espaço inferior */
 }
 
+/* Links no cabeçalho e rodapé */
 header a, footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+    color: white;                     /* Cor branca */
+    text-decoration: none;            /* Remove sublinhado */
+    font-weight: bolder;              /* Negrito */
 }
 
+/* Efeito hover nos links */
 header a:hover, footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline;       /* Sublinha ao passar o mouse */
 }
 
+/* Configuração geral das seções */
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
+    padding-top: 10vh;                /* Espaço superior proporcional à tela */
+    padding-bottom: 10vh;             /* Espaço inferior proporcional à tela */
+    line-height: 2em;                 /* Altura da linha para legibilidade */
+    padding-left: 30px;               /* Espaço à esquerda */
+    font-family: var(--fonte3);       /* Fonte Sriracha */
+    font-size: 3.5vw;                 /* Tamanho responsivo */
 }
 
+/* Espaçamento entre parágrafos das seções */
 section > p {
     padding-bottom: 2em;
 }
 
+/* Seção normal (fundo branco, texto preto) */
 section.normal {
     background-color: white;
     color: black;
 }
 
+/* Seção com imagem de fundo */
 section.imagem {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-attachment: fixed;
+    background-color: rgb(51, 51, 51); /* Fundo cinza escuro */
+    color: white;                      /* Texto branco */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /* Sombra interna */
+    background-attachment: fixed;      /* Efeito paralaxe (imagem fixa no scroll) */
 }
 
+/* Texto dentro das seções com imagem */
 section.imagem > p {
-    display: inline-block;
-    padding: 6px;
-    background-color: rgba(0, 0, 0, 0.514);
-    text-shadow: 1px 1px 0px black;
+    display: inline-block;             /* Caixa ajustada ao conteúdo */
+    padding: 6px;                      /* Espaçamento interno */
+    background-color: rgba(0, 0, 0, 0.514); /* Fundo semitransparente */
+    text-shadow: 1px 1px 0px black;    /* Sombra para destacar texto */
 }
 
+/* Seção com imagem específica (background001.jpg) */
 section#img01 {
     background-image: url('../Imagens/background001.jpg');
-    background-position: right center;
-    background-size: cover;
+    background-position: right center; /* Posição da imagem */
+    background-size: cover;            /* Cobre toda a área */
 }
 
+/* Seção com outra imagem específica (background002.jpg) */
 section#img02 {
     background-image: url('../Imagens/background002.jpg');
     background-size: cover;
 }
 
+/* Rodapé */
 footer {
-    background-color: black;
-    color:white;
-    text-align: center;
-    padding: 10px;
+    background-color: black;           /* Fundo preto */
+    color:white;                       /* Texto branco */
+    text-align: center;                /* Centralizado */
+    padding: 10px;                     /* Espaçamento interno */
 }
