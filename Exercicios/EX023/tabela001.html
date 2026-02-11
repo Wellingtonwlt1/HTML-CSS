@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para ser responsiva em dispositivos móveis -->
+    <title>Tabelas</title> <!-- Título exibido na aba do navegador -->
+    <link rel="shortcut icon" href="wellington.ico" type="image/x-icon"> <!-- Define o ícone da aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo para estilização -->
+</head>
+<body>
+    <h1>Minha primeira tabela</h1> <!-- Título principal da página -->
+
+    <!-- Comentário explicativo sobre hierarquia de tabelas:
+         TABLE = tabela
+         TR (table row) = linha da tabela
+         TH (table header) = cabeçalho da tabela
+         TD (table data) = dado da tabela -->
+
+    <table> <!-- Início da tabela -->
+         <tr> <!-- Primeira linha da tabela -->
+             <td>A1</td> <!-- Primeira célula da linha -->
+             <td>B1</td> <!-- Segunda célula da linha -->
+             <td>C1</td> <!-- Terceira célula da linha -->
+         </tr>
+         <tr class="linha"> <!-- Segunda linha com classe "linha" para aplicar estilo CSS -->
+            <td>A2</td> <!-- Primeira célula -->
+            <td>B2</td> <!-- Segunda célula -->
+            <td class="numero">C2</td> <!-- Terceira célula -->
+         </tr>
+         <tr> <!-- Terceira linha da tabela -->
+            <td>A3</td> <!-- Primeira célula -->
+            <td>B3</td> <!-- Segunda célula -->
+            <td class="numero">C3</td> <!-- Terceira célula -->
+         </tr>
+         <tr> <!-- Quarta linha da tabela -->
+            <td>A4</td> <!-- Primeira célula -->
+            <td class="dado">B4</td> <!-- Segunda célula com classe "dado" para aplicar estilo CSS -->
+            <td>C4</td> <!-- Terceira célula -->
+         </tr>
+    </table> <!-- Fim da tabela -->
+</body>
+</html>

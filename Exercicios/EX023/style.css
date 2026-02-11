@@ -1,0 +1,30 @@
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8, garantindo suporte a acentos e caracteres especiais */
+
+body { 
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte principal como Arial, com alternativas Helvetica e sans-serif */
+}
+
+table { 
+    width: 400px; /* Define largura fixa da tabela em 400px */
+    height: 400px; /* Define altura fixa da tabela em 400px */
+    border-collapse: collapse; /* Faz com que as bordas das células se unam, evitando espaçamento duplo */
+}
+
+tr.linha { 
+    background-color: blueviolet; /* Aplica cor de fundo roxa às linhas com a classe "linha" */
+}
+
+td.dado { 
+    background-color: aqua; /* Aplica cor de fundo azul-claro às células com a classe "dado" */
+}
+
+.numero {
+    text-align: right; /* Alinha o conteúdo das células com a classe "numero" à direita */
+}
+
+td { 
+    border: 1px solid black; /* Define borda preta de 1px em todas as células */
+    padding: 8px; /* Adiciona espaçamento interno de 8px para melhor legibilidade */
+    text-align: center; /* Centraliza o conteúdo horizontalmente em todas as células */
+    vertical-align: top; /* Alinha o conteúdo verticalmente ao topo das células */
+}
