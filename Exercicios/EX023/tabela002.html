@@ -1,44 +1,51 @@
 <!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
 <html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, permitindo acentos e caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para ser responsiva em dispositivos móveis -->
     <title>Tabelas</title> <!-- Título exibido na aba do navegador -->
     <link rel="shortcut icon" href="wellington.ico" type="image/x-icon"> <!-- Define o ícone da aba do navegador -->
     <link rel="stylesheet" href="style2.css"> <!-- Importa o arquivo CSS externo para estilização -->
 </head>
+
 <body>
     <h1>Uso de tabelas grandes</h1> <!-- Título principal da página -->
 
-    <!--
-    ANATOMIA PARA TABELAS GRANDES
-    TABLE
-        THEAD
-            TR, TD, TH
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR, TD, TH
+    <!-- Comentário explicativo sobre a anatomia de uma tabela grande:
+        TABLE  -> elemento principal da tabela
+            THEAD -> cabeçalho da tabela
+                TR -> linha
+                TD -> célula de dados
+                TH -> célula de cabeçalho
+            TBODY -> corpo da tabela
+                TR, TD, TH -> linhas e células
+            TFOOT -> rodapé da tabela
+                TR, TD, TH -> linhas e células
     -->
-     <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+
+    <table> <!-- Início da tabela -->
+        <thead> <!-- Cabeçalho da tabela -->
+            <tr> <!-- Linha do cabeçalho -->
+                <th>Estado</th> <!-- Cabeçalho da coluna "Estado" -->
+                <th>População</th> <!-- Cabeçalho da coluna "População" -->
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td>45 919 049</td>
+
+        <tbody> <!-- Corpo da tabela -->
+            <tr> <!-- Linha de dados -->
+                <td>São Paulo</td> <!-- Célula com o nome do estado -->
+                <td>45 919 049</td> <!-- Célula com a população -->
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+
+        <tfoot> <!-- Rodapé da tabela -->
+            <tr> <!-- Linha do rodapé -->
+                <th>Total de Habitantes</th> <!-- Cabeçalho indicando soma total -->
+                <td>0000</td> <!-- Valor fictício do total (pode ser atualizado) -->
             </tr>
         </tfoot>
-     </table>       
+    </table> <!-- Fim da tabela -->
+
 </body>
 </html>

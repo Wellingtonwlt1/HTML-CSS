@@ -1,25 +1,30 @@
-@charset "UTF_8";
+@charset "UTF_8"; /* Define a codificação de caracteres como UTF-8, garantindo suporte a acentos e caracteres especiais */
 
+/* Estilo aplicado ao corpo da página */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes: tenta usar Arial, se não disponível usa Helvetica, e por fim sans-serif */
 }
 
+/* Estilo aplicado às tabelas */
 table {
-    width: 500px;
-    border-collapse: collapse ;
+    width: 500px; /* Define a largura fixa da tabela em 500 pixels */
+    border-collapse: collapse; /* Faz com que as bordas das células se unam, evitando espaços entre elas */
 }
 
+/* Estilo aplicado às células de dados (td) e cabeçalhos (th) */
 td, th {
-    border: 1px solid black;
-    padding: 10px;
+    border: 1px solid black; /* Cria uma borda preta de 1px em volta de cada célula */
+    padding: 10px; /* Adiciona espaçamento interno de 10px dentro das células */
 }
 
+/* Estilo aplicado ao cabeçalho da tabela */
 thead {
-    background-color: violet;
-    color: white;
+    background-color: violet; /* Define a cor de fundo do cabeçalho como violeta */
+    color: white; /* Define a cor do texto do cabeçalho como branco */
 }
 
+/* Estilo aplicado ao rodapé da tabela */
 tfoot {
-   background-color: violet;
-    color: white; 
+    background-color: violet; /* Define a cor de fundo do rodapé como violeta */
+    color: white; /* Define a cor do texto do rodapé como branco */
 }
